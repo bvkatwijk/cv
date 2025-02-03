@@ -10,14 +10,18 @@
     <link rel="stylesheet" href="https://cdn.lineicons.com/5.0/lineicons.css" />
 
     <style>
-        html,
-        body {
-            aspect-ratio: 0.7072;
-            font-size: 1em;
+        @media print {
+            @page {
+                size: A4;
+            }
+
+            body {
+                font-size: 0.6em;
+            }
         }
 
         tbody:not(:last-child) {
-            border-bottom: solid 20px var(--pico-card-sectioning-background-color);
+            border-bottom: solid 16px var(--pico-card-sectioning-background-color);
         }
     </style>
     <title>Boris van Katwijk Resume</title>
@@ -52,7 +56,8 @@
             reignited a passion for programming that started in my teenage years.
             The Java ecosystem has been a central theme throughout my career, but I use the best tools for the job,
             adapting to different technologies where needed. I like to optimize developer experience and building
-            solutions for both end-users and direct colleagues. I see software development as a unique opportunity to collaborate with
+            solutions for both end-users and direct colleagues. I see software development as a unique opportunity to
+            collaborate with
             passionate colleagues in creating innovative, high-quality products.
             <br /><br />
             I love being part of a well-rounded, enthusiastic team where innovation and best practices come together to
