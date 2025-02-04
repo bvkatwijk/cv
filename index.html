@@ -20,6 +20,12 @@
             }
         }
 
+        #links {
+            display: flex;   
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
         tbody:not(:last-child) {
             border-bottom: solid 16px var(--pico-card-sectioning-background-color);
         }
@@ -30,19 +36,21 @@
 <body>
     <article>
         <header>Boris van Katwijk</header>
-        <table>
-            <tbody>
-                <tr>
-                    <td><i class="lni lni-globe-1"></i><a href="https://bvankatwijk.nl">https://bvankatwijk.nl</a></td>
-                    <td><i class="lni lni-envelope-1"></i><a
-                            href="mailto:bvkatwijk@gmail.com?subject=contact">bvkatwijk@gmail.com</a></td>
-                    <td><i class="lni lni-linkedin"></i><a
-                            href="https://www.linkedin.com/in/bvankatwijk/">/in/bvankatwijk</a></td>
-                    <td><i class="lni lni-github"></i><a href="https://github.com/bvkatwijk/">
-                            /bvkatwijk</a></td>
-                </tr>
-            </tbody>
-        </table>
+        <div id="links">
+            <span>
+                <i class="lni lni-globe-1"></i><a href="https://bvankatwijk.nl">https://bvankatwijk.nl</a>
+            </span>
+            <span>
+                <i class="lni lni-envelope-1"></i><a
+                href="mailto:bvkatwijk@gmail.com?subject=contact">bvkatwijk@gmail.com</a>
+            </span>
+            <span>
+                <i class="lni lni-linkedin"></i><a href="https://www.linkedin.com/in/bvankatwijk/">/in/bvankatwijk</a>
+            </span>
+            <span>
+                <i class="lni lni-github"></i><a href="https://github.com/bvkatwijk/">/bvkatwijk</a>
+            </span>
+        </div>
         <footer>
             Experienced all-round Software Engineer with over ten years of professional experience.
             I enjoy working with colleagues on both new and existing technical projects, specializing in back-end web
@@ -208,7 +216,8 @@
                         real-time data input and recalculations within the Excel sheets. This required parsing the Excel
                         model, designing a system to synchronize form data with calculations, and ensuring seamless
                         updates.
-                        Beyond implementation, I was responsible for feature design, cloud infrastructure, stakeholder collaboration, and
+                        Beyond implementation, I was responsible for feature design, cloud infrastructure, stakeholder
+                        collaboration, and
                         project management.
                     </td>
                 </tr>
