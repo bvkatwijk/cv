@@ -22,6 +22,10 @@
             body {
                 font-size: 0.8em;
             }
+
+            tbody {
+                page-break-inside: avoid;
+            }
         }
 
         #links {
@@ -39,8 +43,8 @@
 
 <body>
     <article>
-        <header>Boris van Katwijk</header>
-        <div id="links">
+        <header id="links">
+            <span>Boris van Katwijk</span>
             <span>
                 <i class="lni lni-globe-1"></i><a href="https://bvankatwijk.nl">https://bvankatwijk.nl</a>
             </span>
@@ -54,8 +58,7 @@
             <span>
                 <i class="lni lni-github"></i><a href="https://github.com/bvkatwijk/">/bvkatwijk</a>
             </span>
-        </div>
-        <footer>
+        </header>
             Experienced all-round Software Engineer with over ten years of professional experience.
             I enjoy working with colleagues on both new and existing technical projects, specializing in back-end web
             development and cloud infrastructure while also working at full-stack development, CLI tools, AI,
@@ -80,7 +83,6 @@
             I value an informal work environment with room for personal development and fresh ideas. Outside of work, I
             enjoy studying philosophy, politics, economics, sociology, and history. I also play the piano, like to go
             bouldering and love to play board games with friends.
-        </footer>
     </article>
 
     <article>
@@ -294,7 +296,7 @@
         </table>
     </article>
 
-    <article>
+    <article style="page-break-inside: avoid;">
         <header>Technology</header>
         <table>
             <tbody>
@@ -365,7 +367,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td><b>STIP Board Year</b> <br />
+                    <td><b><a href="http://stipdelft.nl/">STIP</a> Board Year</b> <br />
                         Treasurer <br />
                     </td>
                     <td>
