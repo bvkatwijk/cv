@@ -120,12 +120,12 @@
                 <a href="#personal" class="secondary">Personal</a>
             </span>
 
-            <button class="button outline">
+            <button class="button outline" onclick="setLanguage('en');">
                 <i class="lni lni-flag-1"></i>
                 EN
             </button>
 
-            <button class="button outline">
+            <button class="button outline" onclick="setLanguage('nl');">
                 <i class="lni lni-flag-1"></i>
                 <span>NL</span>
             </button>
@@ -523,6 +523,26 @@
             </tbody>
         </table>
     </article>
+    <script>
+        setLanguage('en');
+
+        function setLanguage(name) {
+            hideLang();
+            show(name);
+        };
+
+        function show(lang) {
+            document.querySelectorAll('[lang=' + lang + ']').forEach(element => {
+                element.style.removeProperty('display');
+            });
+        }
+
+        function hideLang() {
+            document.querySelectorAll('[lang]').forEach(element => {
+                element.style.display = 'none';
+            });
+        }
+    </script>
 </body>
 
 </html>
