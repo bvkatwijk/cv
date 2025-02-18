@@ -31,9 +31,10 @@
 
         html {
             font-family: 'LMRoman10';
+            text-align: justify;
         }
 
-        #links {
+        #flex {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-evenly;
@@ -43,7 +44,7 @@
             border-bottom: solid 16px var(--pico-card-sectioning-background-color);
         }
 
-        td {
+        .justify {
             text-align: justify;
         }
     </style>
@@ -52,24 +53,42 @@
 
 <body>
     <article>
-        <header id="links">
-            <span>Boris van Katwijk</span>
-            <span>
-                <i class="lni lni-globe-1"></i><a href="https://bvankatwijk.nl">https://bvankatwijk.nl</a>
-            </span>
-            <span>
-                <i class="lni lni-envelope-1"></i><a
-                    href="mailto:bvkatwijk@gmail.com?subject=contact">bvkatwijk@gmail.com</a>
-            </span>
-            <span>
-                <i class="lni lni-linkedin"></i><a href="https://www.linkedin.com/in/bvankatwijk/">/in/bvankatwijk</a>
-            </span>
-            <span>
-                <i class="lni lni-github"></i><a href="https://github.com/bvkatwijk/">/bvkatwijk</a>
-            </span>
-        </header>
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <span style="font-size: 150%;">
+                            <b>Boris van Katwijk</b><br>
+                            Lead Software Engineer
+                        </span>
+                    </td>
+                    <td>
+                        <header id="flex">
 
-        <header>
+                            <span>
+                                <i class="lni lni-globe-1"></i><a
+                                    href="https://bvankatwijk.nl">https://bvankatwijk.nl</a>
+                            </span>
+                            <span>
+                                <i class="lni lni-envelope-1"></i><a
+                                    href="mailto:bvkatwijk@gmail.com?subject=contact">bvkatwijk@gmail.com</a>
+                            </span>
+                            <span>
+                                <i class="lni lni-linkedin"></i><a
+                                    href="https://www.linkedin.com/in/bvankatwijk/">/in/bvankatwijk</a>
+                            </span>
+                            <span>
+                                <i class="lni lni-github"></i><a href="https://github.com/bvkatwijk/">/bvkatwijk</a>
+                            </span>
+                        </header>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </article>
+
+    <article>
+        <header class="justify">
             <b>
                 About Me
             </b>
@@ -132,10 +151,11 @@
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="2">
+                    <td colspan="2" class="justify">
                         At HeadFirst Group I was initially onboarded as a senior backend and cloud developer,
                         however since there were so many improvement opportunities I transitioned into a leading role of
-                        the development department which grew from a team of 5 developers into three complete scrum teams.
+                        the development department which grew from a team of 5 developers into three complete scrum
+                        teams.
                         This growth required streamlining, automation, tooling and standardization.
                         Due to company mergers the microservice landscape had grown too large and diverse to maintain
                         leading to technical
@@ -182,7 +202,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="2">
+                    <td colspan="2" class="justify">
                         Susteen provides detailed housing sustainability advice based on physics-based modelling.
 
                         I worked on a project to dynamically generate web forms from Excel-based models, enabling
@@ -215,7 +235,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="2">
+                    <td colspan="2" class="justify">
                         At Cleverbase I worked in a team of engineers on <a
                             href="https://nl.wikipedia.org/wiki/ISO/IEC_27001">ISO 27001</a>
                         applications for the secure
@@ -250,7 +270,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="2">
+                    <td colspan="2" class="justify">
                         Sping Digital Lab is a software project bureau located in Delft.
                         I worked on various projects, including a <a
                             href="https://sping.nl/en/cases/kolibrie-payroll-new-employees-on-the-payroll-40x-faster/">
@@ -287,7 +307,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="2">
+                    <td colspan="2" class="justify">
                         At TOPdesk I started my career as a summer intern, then was onboarded as a software engineer at
                         the Customer Solutions department,
                         building customizations into TOPdesk for large customers.
@@ -402,8 +422,9 @@
                     </td>
                 </tr>
                 <tr>
-                    <td><b><a href="http://stipdelft.nl/">STIP</a> Board Year</b> <br />
-                        Treasurer <br />
+                    <td><b><a href="http://stipdelft.nl/">STIP Delft</a></b> <br />
+                        <b>Treasurer</b> <br />
+                        2013 - 2014
                     </td>
                     <td>
                         <ul>
