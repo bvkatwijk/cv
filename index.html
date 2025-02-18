@@ -27,6 +27,10 @@
             tbody {
                 page-break-inside: avoid;
             }
+
+            .online {
+                display: none;
+            }
         }
 
         html {
@@ -85,13 +89,37 @@
                 </tr>
             </tbody>
         </table>
+        <main class="online">
+            <span>
+                <i class="lni lni-angle-double-down"></i>
+                <a href="#about" class="secondary">About Me</a>
+            </span>
+
+            <span>
+                <i class="lni lni-angle-double-down"></i>
+                <a href="#experience" class="secondary">Experience</a>
+            </span>
+
+            <span>
+                <i class="lni lni-angle-double-down"></i>
+                <a href="#technology" class="secondary">Technology</a>
+            </span>
+
+            <span>
+                <i class="lni lni-angle-double-down"></i>
+                <a href="#education" class="secondary">Education</a>
+            </span>
+
+            <span>
+                <i class="lni lni-angle-double-down"></i>
+                <a href="#personal" class="secondary">Personal</a>
+            </span>
+        </main>
     </article>
 
-    <article>
+    <article id="about">
         <header class="justify">
-            <b>
-                About Me
-            </b>
+            <b>About Me</b>
         </header>
         Experienced all-round Software Engineer with over ten years of professional experience.
         I enjoy working with colleagues on both new and existing technical projects, specializing in back-end web
@@ -119,7 +147,7 @@
         bouldering and love to play board games with friends.
     </article>
 
-    <article>
+    <article id="experience">
         <header>
             <b>
                 Professional Experience Summary
@@ -340,7 +368,7 @@
         </table>
     </article>
 
-    <article style="page-break-inside: avoid;">
+    <article id="technology" style="page-break-inside: avoid;">
         <header>
             <b>
                 Technology
@@ -400,7 +428,7 @@
         and adapt.
     </article>
 
-    <article>
+    <article id="education">
         <header>
             <b>
                 Education
@@ -437,7 +465,7 @@
         </table>
     </article>
 
-    <article>
+    <article id="personal">
         <header>
             <b>
                 Personal Experience
