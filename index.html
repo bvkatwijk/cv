@@ -38,7 +38,7 @@
             text-align: justify;
         }
 
-        #flex {
+        .flex {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-evenly;
@@ -50,6 +50,17 @@
 
         .justify {
             text-align: justify;
+        }
+
+        button {
+            transform: scale(0.7);
+            transform-origin: 0 0;
+            margin: -5px 0;
+        }
+
+        .online {
+            /* Links get a lot of height for some */
+            margin-bottom: -25px;
         }
     </style>
     <title>Boris van Katwijk Resume</title>
@@ -67,8 +78,7 @@
                         </span>
                     </td>
                     <td>
-                        <header id="flex">
-
+                        <header class="flex">
                             <span>
                                 <i class="lni lni-globe-1"></i><a
                                     href="https://bvankatwijk.nl">https://bvankatwijk.nl</a>
@@ -89,7 +99,7 @@
                 </tr>
             </tbody>
         </table>
-        <main class="online">
+        <main class="online flex">
             <span>
                 <i class="lni lni-angle-double-down"></i>
                 <a href="#about" class="secondary">About Me</a>
