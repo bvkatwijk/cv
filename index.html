@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html data-theme="light">
 
 <head>
     <!-- Required meta tags -->
@@ -36,6 +36,7 @@
         html {
             font-family: 'LMRoman10';
             text-align: justify;
+            padding: 10px;
         }
 
         .flex {
@@ -97,35 +98,49 @@
         <main class="online flex">
             <span>
                 <i class="lni lni-angle-double-down"></i>
-                <a href="#about" class="secondary">About Me</a>
+                <a href="#about" class="secondary">
+                    <span lang="en">About Me</span>
+                    <span lang="nl">Over Mij</span>
+                </a>
             </span>
 
             <span>
                 <i class="lni lni-angle-double-down"></i>
-                <a href="#experience" class="secondary">Experience</a>
+                <a href="#experience" class="secondary">
+                    <span lang="en">Experience</span>
+                    <span lang="nl">Ervaring</span>
+                </a>
             </span>
 
             <span>
                 <i class="lni lni-angle-double-down"></i>
-                <a href="#technology" class="secondary">Technology</a>
+                <a href="#technology" class="secondary">
+                    <span lang="en">Technology</span>
+                    <span lang="nl">Technologie</span>
+                </a>
             </span>
 
             <span>
                 <i class="lni lni-angle-double-down"></i>
-                <a href="#education" class="secondary">Education</a>
+                <a href="#education" class="secondary">
+                    <span lang="en">Education</span>
+                    <span lang="nl">Opleiding</span>
+                </a>
             </span>
 
             <span>
                 <i class="lni lni-angle-double-down"></i>
-                <a href="#personal" class="secondary">Personal</a>
+                <a href="#personal" class="secondary">
+                    Open Source
+                </a>
             </span>
 
-            <button class="button outline" style="visibility: hidden;">
+            <button class="button outline" onclick="setLanguage('en');">
                 <i class="lni lni-flag-1"></i>
                 EN
             </button>
 
-            <button class="button outline" style="visibility: hidden;">
+            <button class="button outline" onclick="setLanguage('nl');">
                 <i class="lni lni-flag-1"></i>
                 <span>NL</span>
             </button>
@@ -139,38 +154,93 @@
 
     <article id="about">
         <header class="justify">
-            <b>About Me</b>
+            <b>
+                <span lang="en">About Me</span>
+                <span lang="nl">Over Mij</span>
+            </b>
         </header>
-        Experienced all-round Software Engineer with over ten years of professional experience.
-        I enjoy working with colleagues on both new and existing technical projects, specializing in back-end web
-        development and cloud infrastructure while also working at full-stack development, CLI tools, AI,
-        automation, and security.
+        <span lang="en">
+            Experienced all-round Software Engineer with over <b>ten years</b> of professional experience.
+            I enjoy working with colleagues on both new and existing technical projects, specializing in <b>back-end</b>
+            web
+            development and <b>cloud</b> infrastructure while also working at <b>full-stack</b> development, <b>CLI</b>
+            tools,
+            <b>AI</b>, automation, and security.
+        </span>
+        <span lang="nl">
+            Ervaren allround software-engineer met meer dan tien jaar professionele ervaring. Ik werk graag samen met
+            collega's aan zowel nieuwe als bestaande technische projecten, gespecialiseerd in <b>back-end</b>
+            webontwikkeling
+            en
+            <b>cloud</b> infrastructuur, tevens richt ik mij op <b>full-stack</b> ontwikkeling, <b>CLI</b> tools,
+            <b>AI</b>, <b>automatisering</b> en
+            beveiliging.
+        </span>
         <br /><br />
-        My background in
-        <a
-            href="https://www.tudelft.nl/en/onderwijs/opleidingen/bachelors/technische-wiskunde/bachelor-of-applied-mathematics">Applied
-            Mathematics</a>
-        reignited a passion for programming that started in my teenage years.
-        The Java ecosystem has been a central theme throughout my career, but I use the best tools for the job,
-        adapting to different technologies where needed. I like to optimize developer experience and building
-        solutions for both end-users and direct colleagues. I see software development as a unique opportunity to
-        collaborate with
-        passionate colleagues in creating innovative, high-quality products.
+        <span lang="en">
+            My background in
+            <a
+                href="https://www.tudelft.nl/en/onderwijs/opleidingen/bachelors/technische-wiskunde/bachelor-of-applied-mathematics"><b>
+                    Applied Mathematics</b></a>
+            reignited a passion for programming that started in my teenage years.
+            The Java ecosystem has been a central theme throughout my career, but I use the best tools for the job,
+            adapting to different technologies where needed. I like to optimize developer experience and building
+            solutions for both end-users and direct colleagues. I see software development as a unique opportunity to
+            collaborate with
+            passionate colleagues in creating innovative, high-quality products.
+        </span>
+        <span lang="nl">
+            Mijn achtergrond in
+            <a
+                href="https://www.tudelft.nl/en/onderwijs/opleidingen/bachelors/technische-wiskunde/bachelor-of-applied-mathematics">Toegepaste
+                Wiskunde
+            </a>
+            heeft een passie voor programmeren nieuw leven ingeblazen die begon in mijn tienerjaren. Het Java-ecosysteem
+            is
+            een centraal thema geweest in mijn hele carrière, maar ik gebruik de beste tools voor de klus en pas me waar
+            nodig aan verschillende technologieën aan. Ik optimaliseer graag de ervaring van ontwikkelaars en bouw
+            oplossingen voor zowel eindgebruikers als directe collega's. Ik zie softwareontwikkeling als een unieke kans
+            om
+            samen te werken met gepassioneerde collega's om innovatieve, hoogwaardige producten te creëren.
+        </span>
         <br /><br />
-        I love being part of a well-rounded, enthusiastic team where innovation and best practices come together to
-        achieve great results. With over a decade of experience, I'm always looking for ways to improve and help
-        others grow. I do this through pair programming, mentoring, hosting workshops, and giving technical
-        presentations.
+
+        <span lang="en">
+            I love being part of a well-rounded, enthusiastic team where innovation and best practices come together to
+            achieve great results. With over a decade of experience, I'm always looking for ways to improve and help
+            others grow. I do this through <b>pair programming</b>, <b>mentoring</b>, hosting <b>workshops</b>, and
+            giving
+            technical presentations.
+        </span>
+        <span lang="nl">
+            Ik vind het geweldig om deel uit te maken van een veelzijdig, enthousiast team waar innovatie en best
+            practices
+            samenkomen om een uitstekend resultaat neer te zetten. Met meer dan tien jaar ervaring ben ik altijd op zoek
+            naar
+            manieren om te verbeteren en anderen te helpen groeien. Ik doe dit door middel van pair programming,
+            <b>mentoring</b>, het hosten van <b>workshops</b> en het geven van technische <b>presentaties</b>.
+        </span>
+
         <br /><br />
-        I value an informal work environment with room for personal development and fresh ideas. Outside of work, I
-        enjoy studying philosophy, politics, economics, sociology, and history. I also play the piano, like to go
-        bouldering and love to play board games with friends.
+
+        <span lang="en">
+            I value an informal work environment with room for personal development and fresh ideas. Outside of work, I
+            enjoy studying philosophy, politics, economics, sociology, and history. I also play the piano, like to go
+            bouldering and love to play board games with friends.
+        </span>
+        <span lang="nl">
+            Ik waardeer een werkomgeving met ruimte voor persoonlijke ontwikkeling en frisse ideeën. Buiten
+            werktijd studeer ik graag filosofie, politiek, economie, sociologie en geschiedenis. Ik speel ook piano, ga
+            graag boulderen en speel graag bordspellen met vrienden.
+        </span>
+
     </article>
 
     <article id="experience">
         <header>
             <b>
-                Professional Experience Summary
+                <span lang="en">Professional Experience Summary</span>
+                <span lang="nl">Ervaring</span>
             </b>
         </header>
         <table>
@@ -183,51 +253,101 @@
                         Feb 2021 - Jan 2025<br />
                     </th>
                     <td>
-                        <ul>
+                        <ul lang="en">
+                            <li>Transition from bi-weekly manual to <b>fully automated software release process</b></li>
                             <li>Led the redesign and implementation of AWS Cloud Infrastructure (AWS CDK), improving
-                                cost efficiency, security, and scalability</li>
-                            <li>Trained colleagues in Microservices, Backend Development, and Continuous Delivery</li>
-                            <li>Owned and improved CI/CD pipelines and Platform Engineering processes</li>
-                            <li>Product Owner of Platform Engineering team</li>
-                            <li>Improving all parts of the software development landscape (front-end, back-end,
-                                infrastructure, cloud, CLI and supporting tooling)</li>
-                            <li>Resolving critical issues in security, performance and data integrity, achieve <a
-                                    href="https://nl.wikipedia.org/wiki/ISO/IEC_27001">ISO27001</a> certification</li>
+                                <b>cost efficiency</b>, <b>security</b>, and <b>scalability</b></li>
+                            <li><b>Product Owner</b> of <b>Platform Engineering</b> team</li>
+                            <li>Achieve and maintain <a href="https://nl.wikipedia.org/wiki/ISO/IEC_27001">ISO27001</a> certification</li>
                             <li>Improve developer experience and iteration speed using Trunk Based Development,
                                 Continuous Delivery, Automated Testing</li>
+                        </ul>
+
+                        <ul lang="nl">
+                            <li>Handmatig tweewekelijks releaseproces vervangen door continue geautomatiseerde release</li>
+                            <li>Implementatie van AWS CDK voor <b>kostenefficiëntie</b>, <b>beveiliging</b> en <b>schaalbaarheid</b></li>
+                            <li><b>Product Owner</b> van <b>Platform Engineering</b> team</li>
+                            <li>Verbetering van alle onderdelen van het softwareontwikkelingslandschap (front-end,
+                                back-end, infrastructuur, cloud, CLI en ondersteunende tools)</li>
+                            <li>Behalen en behouden van de <a
+                                    href="https://nl.wikipedia.org/wiki/ISO/IEC_27001">ISO27001</a>- certificering</li>
+                            <li>Verbeter de Developer Experience en iteratiesnelheid met behulp van Trunk Based
+                                Development, Continuous Delivery en Automated Testing</li>
                         </ul>
                     </td>
                 </tr>
                 <tr>
                     <td colspan="2" class="justify">
-                        At HeadFirst Group I was initially onboarded as a senior backend and cloud developer,
-                        however since there were so many improvement opportunities I transitioned into a leading role of
-                        the development department which grew from a team of 5 developers into three complete scrum
-                        teams.
-                        This growth required streamlining, automation, tooling and standardization.
-                        Due to company mergers the microservice landscape had grown too large and diverse to maintain
-                        leading to technical
-                        debt and a decrease in velocity. I asked for the green light to spend part of my time on general
-                        development improvements.<br />
-
-                        While keeping the flow of the teams I introduced steps to simplify and reduce the
-                        required work. Colleagues joined in with ideating and implementing these improvements.
-                        I reduced work by providing generated API clients between projects.
-                        I set up SonarQube pull request decoration, automated CI/CD pipelines and fed notifications into
-                        Slack.
-                        I introducted distributed tracing with AWS XRay to be able to visualize performance bottlenecks,
-                        administrated and standardized logging in GrayLog, set up alerts for important errors,
-                        hooked up critical alerts into Slack to reduce lead time.
-                        I removed all branching habits from the numerous repositories by using trunk-based development,
-                        eliminating error-prone git work.
-                        Not only did this require thorough design and implementation effort, but also project
-                        management,
-                        as well as gaining support from peers and higher level management by hosting demos,
-                        presentations and feedback sessions.
+                        <span lang="en">
+                            At HeadFirst Group started as senior backend and cloud developer and quickly transitioned into a cross-team
+                            <b>Development Lead</b>. In four years the department <b>quadrupled</b> in size, requiring new solutions in
+                            streamlining, automation, tooling and standardization.
+                            Due to company mergers the microservice landscape had grown too large and diverse to
+                            maintain
+                            leading to technical
+                            debt and a decrease in velocity. I asked for the green light to spend part of my time on
+                            general
+                            development improvements.
+                        </span>
+                        <span lang="nl">
+                            Bij HeadFirst Group startte ik als senior backend- en
+                            cloudontwikkelaar en transitioneerde naar een teamoverstijgende <b>Lead Development</b> rol.
+                             in de Development afdeling dat groeide van een team van 5 ontwikkelaars naar
+                            drie
+                            complete scrumteams. Deze groei vereiste stroomlijning, automatisering, tooling en
+                            standaardisatie. Door fusies van bedrijven was het techniekpakket te groot en divers
+                            geworden om te onderhouden, wat leidde tot Technical debt en een afname van de
+                            ontwikkelsnelheid. Ik
+                            kreeg groen licht om een ​​deel van mijn tijd te besteden aan algemene
+                            ontwikkelingsverbeteringen.
+                        </span>
                         <br />
-                        Please see some <a
-                            href="https://www.linkedin.com/in/bvankatwijk/details/recommendations">LinkedIn
-                            recommendations</a>.
+
+                        <span lang="en">
+                            While keeping the flow of the teams I introduced steps to simplify and reduce the
+                            required work. Colleagues joined in with ideating and implementing these improvements.
+                            I reduced work by providing generated API clients between projects.
+                            I set up SonarQube pull request decoration, automated CI/CD pipelines and fed notifications
+                            into
+                            Slack.
+                            I introducted distributed tracing with AWS XRay to be able to visualize performance
+                            bottlenecks,
+                            administrated and standardized logging in GrayLog, set up alerts for important errors,
+                            hooked up critical alerts into Slack to reduce lead time.
+                            I removed all branching habits from the numerous repositories by using trunk-based
+                            development,
+                            eliminating error-prone git work.
+                            Not only did this require thorough design and implementation effort, but also project
+                            management,
+                            as well as gaining support from peers and higher level management by hosting demos,
+                            presentations and feedback sessions.
+                            <br />
+                            Please see some <a
+                                href="https://www.linkedin.com/in/bvankatwijk/details/recommendations">LinkedIn
+                                recommendations</a>.
+                        </span>
+                        <span lang="nl">
+                            Zonder de flow van de teams te onderbreken introduceerde ik stappen om het vereiste werk te
+                            vereenvoudigen en te verminderen. Collega's hielpen mee met het bedenken en implementeren
+                            van
+                            deze verbeteringen. Ik verminderde het werk door gegenereerde API-clients tussen projecten
+                            te
+                            leveren. Ik stroomlijnde CI/CD pipelines en automatiseerde codeanalyse met Sonar.
+                            Ik introduceerde Distributed Tracing <a
+                                href="https://docs.aws.amazon.com/xray/latest/devguide/aws-xray.html">AWS XRay</a> om
+                            performance knelpunten te kunnen visualiseren, beheerde en standaardiseerde logging in
+                            GrayLog,
+                            stelde waarschuwingen in voor belangrijke fouten en koppelde kritieke waarschuwingen aan
+                            Slack
+                            om reactietijd te verkorten. Ik heb alle branching uit de talrijke repositories
+                            verwijderd door trunk-based development te gebruiken, waarmee foutgevoelig git-werk
+                            onnodig werd. Dit vereiste niet alleen een grondige ontwerp- en implementatie-inspanning,
+                            maar
+                            ook projectmanagement en aantonen van de verbetering aan collega's en directie door demo's,
+                            presentaties en feedbacksessies te geven.
+                            Graag wijs ik op enkele <a
+                                href="https://www.linkedin.com/in/bvankatwijk/details/recommendations">LinkedIn-aanbevelingen</a>.
+                        </span>
                     </td>
                 </tr>
             </tbody>
@@ -241,25 +361,46 @@
                         Nov 2020 - Mar 2022<br />
                     </th>
                     <td>
-                        <ul>
+                        <ul lang="en">
                             <li>Implement service for dynamic form rendering, allowing customers to receive personal
                                 sustainability advice</li>
                             <li>Iterate on project design and direction with stakeholders (directors, colleagues,
                                 customers)</li>
                         </ul>
+                        <ul lang="nl">
+                            <li>Ontwerp en Implementatie van dynamische online module waarmee klanten persoonlijk
+                                duurzaamheidsadvies kunnen ontvangen</li>
+                            <li>Projectontwerp en stakeholder management (directeuren, collega's, klanten)</li>
+                        </ul>
                     </td>
                 </tr>
                 <tr>
                     <td colspan="2" class="justify">
-                        Susteen provides detailed housing sustainability advice based on physics-based modelling.
+                        <span lang="en">
+                            Susteen provides detailed housing sustainability advice based on physics-based modelling.
 
-                        I worked on a project to dynamically generate web forms from Excel-based models, enabling
-                        real-time data input and recalculations within the Excel sheets. This required parsing the Excel
-                        model, designing a system to synchronize form data with calculations, and ensuring seamless
-                        updates.
-                        Beyond implementation, I was responsible for feature design, cloud infrastructure, stakeholder
-                        collaboration, and
-                        project management.
+                            I worked on a project to dynamically generate web forms from Excel-based models, enabling
+                            real-time data input and recalculations within the Excel sheets. This required parsing the
+                            Excel
+                            model, designing a system to synchronize form data with calculations, and ensuring seamless
+                            updates.
+                            Beyond implementation, I was responsible for feature design, cloud infrastructure,
+                            stakeholder
+                            collaboration, and
+                            project management.
+                        </span>
+                        <span lang="nl">
+                            Susteen biedt gedetailleerd advies over duurzaamheid van woningen op basis natuurkundige
+                            modellen.
+
+                            Ik heb gewerkt aan een project om webformulieren dynamisch te
+                            genereren vanuit Excelmodellen, waardoor realtime gegevensinvoer en herberekeningen in de
+                            Excel-sheets mogelijk zijn. Hiervoor moest het Excel-model worden geparseerd, een systeem
+                            worden
+                            ontworpen om formuliergegevens te synchroniseren met berekeningen en naadloze updates worden
+                            gegarandeerd. Naast de implementatie was ik verantwoordelijk voor het ontwerp van functies,
+                            cloudinfrastructuur, samenwerking met belanghebbenden en projectmanagement.
+                        </span>
                     </td>
                 </tr>
             </tbody>
@@ -274,28 +415,59 @@
                         Aug 2019 - Nov 2020<br />
                     </th>
                     <td>
-                        <ul>
+                        <ul lang="en">
                             <li>Developing on critical and security-sensitive business applications</li>
                             <li>Developing identification solutions and cryptographic signing</li>
                             <li>Implementing CI/CD pipelines, Containerization, Project Migrations</li>
+                            <li>Scala, Java, Javascript, Docker, AWS, MongoDB, Ansible</li>
+                        </ul>
+                        <ul lang="nl">
+                            <li>Ontwikkelen van kritieke en beveiligingsgevoelige bedrijfsapplicaties</li>
+                            <li>Ontwikkelen van identificatieoplossingen en cryptografische ondertekening</li>
+                            <li>Implementeren van CI/CD-pipelines, containerisatie, projectmigraties</li>
                             <li>Scala, Java, Javascript, Docker, AWS, MongoDB, Ansible</li>
                         </ul>
                     </td>
                 </tr>
                 <tr>
                     <td colspan="2" class="justify">
-                        At Cleverbase I worked in a team of engineers on <a
-                            href="https://nl.wikipedia.org/wiki/ISO/IEC_27001">ISO 27001</a>
-                        applications for the secure
-                        exchange of digital information, including qualified electronig data signing and providing
-                        secure digital identification.
+                        <span lang="en">
+                            At Cleverbase I worked in a team of engineers on <a
+                                href="https://nl.wikipedia.org/wiki/ISO/IEC_27001">ISO 27001</a>
+                            applications for the secure
+                            exchange of digital information, including qualified electronig data signing and providing
+                            secure digital identification.
 
-                        I contributed to a microservices architecture built with Scala, Java, Go, Python, JavaScript,
-                        and React, applying functional programming (FP) and domain-driven design (DDD) principles.
+                            I contributed to a microservices architecture built with Scala, Java, Go, Python,
+                            JavaScript,
+                            and React, applying functional programming (FP) and domain-driven design (DDD) principles.
 
-                        Additionally, I led a complete overhaul of the Git strategy and CI/CD pipelines.
-                        I also designed and developed automated audit tooling for our AWS cloud infrastructure to ensure
-                        compliance and company certification status.
+                            Additionally, I led a complete overhaul of the Git strategy and CI/CD pipelines.
+                            I also designed and developed automated audit tooling for our AWS cloud infrastructure to
+                            ensure
+                            compliance and company certification status.
+                        </span>
+                        <span lang="nl">
+                            Bij Cleverbase werkte ik in een team van engineers aan <a
+                                href="https://nl.wikipedia.org/wiki/ISO/IEC_27001">ISO 27001</a>
+                            applicaties voor de veilige
+                            uitwisseling van digitale informatie, inclusief gekwalificeerde elektronische
+                            gegevensondertekening en het verstrekken van veilige digitale identificatie op het hoogst
+                            mogelijke
+                            <a
+                                href="https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/identiteit/eidas/">eIDAS</a>.
+
+                            Ik droeg bij aan een microservicesarchitectuur die is gebouwd met Scala, Java, Go, Python,
+                            JavaScript
+                            en React, waarbij functionele programmering (FP) en Domain-Driven Design (DDD)-principes
+                            werden toegepast.
+
+                            Daarnaast leidde ik een complete revisie van de Git-strategie en CI/CD-pipelines.
+                            Ik ontwierp en ontwikkelde tevens geautomatiseerde audittools voor onze
+                            AWS-cloudinfrastructuur
+                            om
+                            correctheid, veiligheid en certificeringsstatus van het bedrijf te garanderen.
+                        </span>
                     </td>
                 </tr>
             </tbody>
@@ -309,30 +481,55 @@
                         Dec 2017 - Aug 2019<br />
                     </th>
                     <td>
-                        <ul>
+                        <ul lang="en">
                             <li>Full stack development on B2B customer projects</li>
-                            <li>Design and implement AWS infrastructure</li>
-                            <li>Java, Scala, Ruby on Rails, NodeJS, VueJS, Docker, Linux, Nginx, AWS, SQS, SNS, S3,
-                                Lambda</li>
+                            <li>Design and implement 99.9% uptime Cloud Infrastructure</li>
+                        </ul>
+
+                        <ul lang="nl">
+                            <li>Full stack-ontwikkeling op B2B-klantprojecten</li>
+                            <li>Ontwerp en implementatie 99.9% uptime Cloud Infrastructuur</li>
                         </ul>
                     </td>
                 </tr>
                 <tr>
                     <td colspan="2" class="justify">
-                        Sping Digital Lab is a software project bureau located in Delft.
-                        I worked on various projects, including a <a
-                            href="https://sping.nl/en/cases/kolibrie-payroll-new-employees-on-the-payroll-40x-faster/">
-                            gig work platform and mobile application including administration, time-tracking and
-                            payout</a>.
-                        Working at Sping gave me the opportunity to work with great colleagues on versatile
-                        fullstack projects involving Java, Ruby, Javascript, Typescript, Spring, Play, Rails, NodeJS and
-                        Vue.
-                        My other responsibilities included CI/CD processes, containerizing applications, development
-                        setup of projects with instant reloading,
-                        hosting technical workshops and setting up and administrating AWS infrastructure.
-                        I achieved <a
-                            href="https://aws.amazon.com/certification/certified-solutions-architect-associate/">AWS
-                            Certified Solutions Architect - Associate</a>
+                        <span lang="en">
+                            Sping Digital Lab is a software project bureau located in Delft.
+                            I worked on various projects, including a <a
+                                href="https://sping.nl/en/cases/kolibrie-payroll-new-employees-on-the-payroll-40x-faster/">
+                                gig work platform and mobile application including administration, time-tracking and
+                                payout</a>.
+                            Working at Sping gave me the opportunity to work with great colleagues on versatile
+                            fullstack projects involving Java, Ruby, Javascript, Typescript, Spring, Play, Rails, NodeJS
+                            and
+                            Vue.
+                            My other responsibilities included CI/CD processes, containerizing applications, development
+                            setup of projects with instant reloading,
+                            hosting technical workshops and setting up and administrating AWS infrastructure.
+                            I achieved <a
+                                href="https://aws.amazon.com/certification/certified-solutions-architect-associate/">AWS
+                                Certified Solutions Architect - Associate</a>
+                        </span>
+                        <span lang="nl">Sping Digital Lab is een software projectbureau gevestigd in Delft.
+                            Ik heb aan verschillende projecten gewerkt, waaronder een <a
+                                href="https://sping.nl/nl/cases/kolibrie-payroll-nieuwe-medewerkers-op-de-salarislijst-40x-sneller/">
+                                werkplatform en mobiele applicatie voor uitzendwerk inclusief administratie,
+                                tijdregistratie
+                                en
+                                uitbetaling</a>.
+                            Werken bij Sping gaf mij de kans om met geweldige collega's te werken aan veelzijdige
+                            fullstack-projecten met onder andere Java, Ruby, Javascript, Typescript, Spring, Play,
+                            Rails,
+                            NodeJS en
+                            Vue.
+                            Mijn andere verantwoordelijkheden omvatten CI/CD-processen, containerisatie van applicaties,
+                            development-tooling inrichten zoals instant reloading,
+                            het hosten van technische workshops en het opzetten en beheren van AWS-infrastructuur.
+                            Ik heb hier tevens <a
+                                href="https://aws.amazon.com/certification/certified-solutions-architect-associate/">AWS
+                                Certified Solutions Architect - Associate</a> behaald.
+                        </span>
                     </td>
                 </tr>
             </tbody>
@@ -346,9 +543,16 @@
                         Jul 2014 - Nov 2017<br />
                     </th>
                     <td>
-                        <ul>
+                        <ul lang="en">
                             <li>Implementing Customer Solutions add-ons onto TOPdesk product</li>
                             <li>Developing E2E testing automation</li>
+                            <li>Java, Scala, Kotlin, TypeScript, Angular, Jenkins, Docker, Gradle, Selenium, Git, JIRA
+                            </li>
+                        </ul>
+
+                        <ul lang="nl">
+                            <li>Implementeren van Customer Solutions add-ons op TOPdesk-product</li>
+                            <li>Ontwikkelen van E2E-testautomatisering</li>
                             <li>Java, Scala, Kotlin, TypeScript, Angular, Jenkins, Docker, Gradle, Selenium, Git, JIRA
                             </li>
                         </ul>
@@ -356,33 +560,70 @@
                 </tr>
                 <tr>
                     <td colspan="2" class="justify">
-                        At TOPdesk I started my career as a summer intern, then was onboarded as a software engineer at
-                        the Customer Solutions department,
-                        building customizations into TOPdesk for large customers.
-                        Projects included creating additional user interfaces, integrations with third party
-                        applications or overhauling internal workflows and processes.
-                        Maintaining a wide portfolio of customer solutions on top of an ever-changing base product
-                        developed by around 400 developers required robust testing,
-                        disciplined structure and habits, and type safety where possible to be able to detect
-                        regressions and fix them before new versions of the base product went live.
-                        <br />
-                        We used Gradle to orchestrate customer projects on top of the base product as a compiled JAR,
-                        then used predefined hooks and techniques like shadowing to create customizable behaviour,
-                        hot-reloading for fast development feedback,
-                        and quickly got into Docker as soon as the technology matured.
-                        <br />
-                        A few projects
-                        <ul>
-                            <li>Integration between Microsoft Exchange and TOPdesk reservations</li>
-                            <li>In-application chat, simultaneous page editing requiring concurrent E2E testing</li>
-                        </ul>
+                        <span lang="en">
+                            At TOPdesk I started my career as a summer intern, then was onboarded as a software engineer
+                            at
+                            the Customer Solutions department,
+                            building customizations into TOPdesk for large customers.
+                            Projects included creating additional user interfaces, integrations with third party
+                            applications or overhauling internal workflows and processes.
+                            Maintaining a wide portfolio of customer solutions on top of an ever-changing base product
+                            developed by around 400 developers required robust testing,
+                            disciplined structure and habits, and type safety where possible to be able to detect
+                            regressions and fix them before new versions of the base product went live.
+                            <br />
+                            We used Gradle to orchestrate customer projects on top of the base product as a compiled
+                            JAR,
+                            then used predefined hooks and techniques like shadowing to create customizable behaviour,
+                            <b>hot-reloading</b> for fast development feedback,
+                            and got into Docker as soon as the technology matured.
+                            <br />
+                            A few projects
+                            <ul>
+                                <li>Integration between Microsoft Exchange and TOPdesk reservations</li>
+                                <li>In-application chat, simultaneous page editing requiring concurrent E2E testing</li>
+                            </ul>
 
-                        <br />
-                        I promoted Test-Driven Development and code quality, participated in the transition to
-                        Continuous Deployment, improved the usage of source control (Mercurial, Git, JIRA),
-                        implemented build pipelines for many projects (Gradle, Jenkins, Docker), developed a
-                        fine-tuned end-to-end testing DSL (JUnit, Selenium, Karma, Jasmine), and introduced
-                        various new tools and frameworks (Scala, Angular, Kotlin, TypeScript, Sonar).
+                            <br />
+                            I promoted Test-Driven Development and code quality, participated in the transition to
+                            Continuous Deployment, improved the usage of source control (Mercurial, Git, JIRA),
+                            implemented build pipelines for many projects (Gradle, Jenkins, Docker), developed a
+                            fine-tuned end-to-end testing DSL (JUnit, Selenium, Karma, Jasmine), and introduced
+                            various new tools and frameworks (Scala, Angular, Kotlin, TypeScript, Sonar).
+                        </span>
+
+                        <span lang="nl">
+                            Bij TOPdesk begon ik mijn carrière middels een internship en werd daarna aangenomen als
+                            software-engineer bij de afdeling Customer Solutions,
+                            waar ik maatwerk bouwde in TOPdesk voor grote klanten. <br>
+                            Projecten omvatten het maken van extra gebruikersinterfaces, integraties met applicaties van
+                            derden of het herzien van interne workflows en processen. Het onderhouden van een breed
+                            portfolio van klantoplossingen bovenop een voortdurend veranderend basisproduct dat door
+                            ongeveer 400 ontwikkelaars is ontwikkeld vereiste robuuste tests, gedisciplineerde structuur
+                            en
+                            gewoonten en waar mogelijk Compile- en Type Safety om regressies te kunnen detecteren en te
+                            verhelpen
+                            voordat nieuwe versies van het basisproduct live gingen. <br> We gebruikten Gradle om
+                            klantprojecten te orkestreren op het basisproduct als een gecompileerde JAR, en gebruikten
+                            vervolgens vooraf gedefinieerde hooks en technieken zoals shadowing om aanpasbaar gedrag te
+                            creëren, <b>hot-reloading</b> voor snelle ontwikkelingsfeedback, en stapten snel over op Docker
+                            zodra
+                            de technologie volwassen werd. <br>
+                            Enkele projecten
+                            <ul>
+                                <li>Integratie tussen Microsoft Exchange en TOPdesk-reserveringen</li>
+                                <li>In-applicatiechat, gelijktijdige paginabewerking waarvoor concurrent E2E-tests nodig
+                                    waren</li>
+                            </ul>
+
+                            <br>
+                            Ik heb Test-Driven Development en codekwaliteit gepromoot, deelgenomen aan de overgang naar
+                            Continue implementatie, het gebruik van broncodebeheer (Mercurial, Git, JIRA) verbeterd,
+                            build-pipelines geïmplementeerd voor veel projecten (Gradle, Jenkins, Docker), een
+                            verfijnde end-to-end test-DSL ontwikkeld (JUnit, Selenium, Karma, Jasmine) en verschillende
+                            nieuwe tools en frameworks geïntroduceerd
+                            (Scala, Angular, Kotlin, TypeScript, Sonar).
+                        </span>
                     </td>
                 </tr>
         </table>
@@ -391,7 +632,8 @@
     <article id="technology" style="page-break-inside: avoid;">
         <header>
             <b>
-                Technology
+                <span lang="en">Technology</span>
+                <span lang="nl">Techniek</span>
             </b>
         </header>
         <table>
@@ -442,7 +684,8 @@
                     <td>
                         <b>Skills</b>
                     </td>
-                    <td>Critial thinking, Analysis, Mentoring, Hosting workshops, Presenting, Technical Leadership, Team Chemistry</td>
+                    <td>Critial thinking, Analysis, Mentoring, Hosting workshops, Presenting, Technical Leadership, Team
+                        Chemistry</td>
                 </tr>
                 <tr>
                     <td><b>Application Administration</b></td>
@@ -450,14 +693,24 @@
                 </tr>
             </tbody>
         </table>
-        While the above are some of the many technologies I have worked with over the years, I am always eager to learn
-        and adapt.
+        <span lang="en">
+            While the above are some of the many technologies I have worked with over the years, I am always eager to
+            learn
+            and adapt.
+        </span>
+        <span lang="nl">
+            Hoewel de bovenstaande technologieën enkele van de vele technologieën zijn waarmee ik in de loop der jaren
+            heb
+            gewerkt, wil ik altijd graag leren
+            en me aanpassen.
+        </span>
     </article>
 
     <article id="education">
         <header>
             <b>
-                Education
+                <span lang="en">Education</span>
+                <span lang="nl">Opleiding</span>
             </b>
         </header>
         <table>
@@ -465,13 +718,18 @@
                 <tr>
                     <td>
                         <b>Bachelor Applied Mathematics</b><br />
-                        University of Delft <br />
+                        <span lang="en">Technical University of Delft</span><span lang="nl">Technische Universiteit
+                            Delft</span> <br />
                         2009 - 2013
                     </td>
                     <td>
-                        <ul>
+                        <ul lang="en">
                             <li>Specialization in Linear Programming and Polynomial Algorithms</li>
                             <li>Minor in Finance</li>
+                        </ul>
+                        <ul lang="nl">
+                            <li>Specialisatie Lineair Programmering en Polynomial Algoritms</li>
+                            <li>Minor Finance</li>
                         </ul>
                     </td>
                 </tr>
@@ -481,9 +739,13 @@
                         2013 - 2014
                     </td>
                     <td>
-                        <ul>
+                        <ul lang="en">
                             <li>Organizing election campaign</li>
-                            <li>Growth from 7th to 2nd political party in Delft</li>
+                            <li>Growth from 7th to <b>2nd political party</b> in Delft</li>
+                        </ul>
+                        <ul lang="nl">
+                            <li>Organiseren verkiezingscampagne</li>
+                            <li>Groei van 7e naar <b>2e politieke partij</b> in Delft</li>
                         </ul>
                     </td>
                 </tr>
@@ -494,15 +756,18 @@
     <article id="personal">
         <header>
             <b>
-                Personal Experience
+                Open Source
             </b>
         </header>
         <table>
             <tbody>
                 <tr>
-                    <td>Open-Source Contributions</td>
                     <td>
-                        <ul>
+                        <span lang="en">Contributions</span>
+                        <span lang="nl">Bijdragen</span>
+                    </td>
+                    <td>
+                        <ul lang="en">
                             <li><a href="https://github.com/vavr-io/vavr">vavr</a> (functional programming library for
                                 Java): Contributions (DX, minor features)
                                 (Java, Scala, Gradle, JUnit)</li>
@@ -510,12 +775,23 @@
                                 databases): Contributions to DX, minor
                                 features (SQL, Docker, NodeJS, Javascript)</li>
                         </ul>
+
+                        <ul lang="nl">
+                            <li><a href="https://github.com/vavr-io/vavr">vavr</a> (FP-library
+                                voor Java): Bijdragen (DX, functionaliteiten) (Java, Scala, Gradle, JUnit)</li>
+                            <li><a href="https://github.com/nocodb/nocodb">NocoDB</a> (Geautomatiseerde geavanceerde
+                                gebruikersinterface voor
+                                databases): Bijdragen (DX, functionaliteiten) (SQL, Docker, NodeJS, Javascript)</li>
+                        </ul>
                     </td>
                 </tr>
                 <tr>
-                    <td>Open Source Projects</td>
                     <td>
-                        <ul>
+                        <span lang="en">Projects</span>
+                        <span lang="nl">Projecten</span>
+                    </td>
+                    <td>
+                        <ul lang="en">
                             <li><a href="https://github.com/bvkatwijk/java-lens">java-lens</a>: Lens generation for Java
                                 Records (Java)</li>
                             <li><a href="https://github.com/bvkatwijk/j2html-converter">j2html-converter</a>: Convert
@@ -523,11 +799,40 @@
                             <li><a href="https://github.com/bvkatwijk/advent_of_code">advent of code</a>: yearly
                                 programming challenges (Rust)</li>
                         </ul>
+                        <ul lang="nl">
+                            <li><a href="https://github.com/bvkatwijk/java-lens">java-lens</a>: Lens generation voor
+                                Java
+                                Records (Java)</li>
+                            <li><a href="https://github.com/bvkatwijk/j2html-converter">j2html-converter</a>: Converteer
+                                HTML naar Java j2html-code (Javascript)</li>
+                            <li><a href="https://github.com/bvkatwijk/advent_of_code">advent of code</a>: jaarlijkse
+                                programmeeruitdagingen (Rust)</li>
+                        </ul>
                     </td>
                 </tr>
             </tbody>
         </table>
     </article>
+    <script>
+        setLanguage('en');
+
+        function setLanguage(name) {
+            hideLang();
+            show(name);
+        };
+
+        function show(lang) {
+            document.querySelectorAll('[lang=' + lang + ']').forEach(element => {
+                element.style.removeProperty('display');
+            });
+        }
+
+        function hideLang() {
+            document.querySelectorAll('[lang]').forEach(element => {
+                element.style.display = 'none';
+            });
+        }
+    </script>
 </body>
 
 </html>
