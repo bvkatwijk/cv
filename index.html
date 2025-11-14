@@ -17,7 +17,7 @@
             }
 
             html {
-                zoom: 75%;
+                zoom: 73%;
             }
 
             body {
@@ -40,6 +40,10 @@
             article {
                 border-style: solid;
                 border-color: var(--pico-card-sectioning-background-color);
+            }
+
+            .picture {
+                width: 80px;
             }
         
         }
@@ -79,7 +83,9 @@
 
 <body>
     <article class="head flex">
-        <img src="./me.jpeg" alt="Boris van Katwijk" width="150" height="200">
+        <div class="picture">
+            <img src="./me.jpeg" alt="Boris van Katwijk" width="150" height="200">
+        </div>
         <div style="flex-grow: 1;">
             <table>
                 <tbody>
@@ -808,7 +814,7 @@
         </table>
     </article>
 
-    <article id="education">
+    <article id="education" style="page-break-inside: avoid;">
         <header>
             <b>
                 <span lang="en">Education</span>
@@ -855,7 +861,7 @@
         </table>
     </article>
 
-    <article id="personal">
+    <article id="personal" style="page-break-inside: avoid;">
         <header>
             <b>
                 Open Source
