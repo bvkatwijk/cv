@@ -81,6 +81,14 @@
         .picture img {
             border-radius: 8px;
         }
+
+        .lang-button {
+            margin-top: -5px;
+        }
+
+        .quicknav {
+            padding-top: 19px;
+        }
     </style>
     <title>Boris van Katwijk Resume</title>
 </head>
@@ -122,7 +130,7 @@
                     </tr>
                 </tbody>
             </table>
-            <main class="online flex">
+            <main class="quicknav online flex">
                 <span>
                     <i class="lni lni-angle-double-down"></i>
                     <a href="#about" class="secondary">
@@ -142,8 +150,8 @@
                 <span>
                     <i class="lni lni-angle-double-down"></i>
                     <a href="#technology" class="secondary">
-                        <span lang="en">Technology</span>
-                        <span lang="nl">Technologie</span>
+                        <span lang="en">Tech</span>
+                        <span lang="nl">Tech</span>
                     </a>
                 </span>
 
@@ -170,12 +178,12 @@
                     </a>
                 </span>
 
-                <button class="button outline" onclick="setLanguage('en');">
+                <button class="lang-button button outline" onclick="setLanguage('en');">
                     <i class="lni lni-flag-1"></i>
                     EN
                 </button>
 
-                <button class="button outline" onclick="setLanguage('nl');">
+                <button class="lang-button button outline" onclick="setLanguage('nl');">
                     <i class="lni lni-flag-1"></i>
                     <span>NL</span>
                 </button>
@@ -196,22 +204,22 @@
             </b>
         </header>
         <span lang="en">
-            Experienced all-round Software Engineer with over <b>12 years</b> of professional experience.
-            I enjoy working with colleagues on both new and existing technical projects, specializing in <b>back-end</b>
+            Experienced all-round Software Engineer with over <b>12 years</b> of professional experience and a <b>mathematics</b> background.
+            I enjoy working on technical projects, specializing in <b>back-end</b>
             web
             development and <b>cloud</b> infrastructure while also working at <b>full-stack</b> development, <b>CLI</b>
-            tools, <b>CICD</b>, <b>AI</b>, automation, and security.
+            tools, <b>CICD</b>, <b>AI</b>, <b>automation</b>, and <b>security</b>.
         </span>
         <span lang="nl">
-            Ervaren allround software-engineer met meer dan 12 jaar professionele ervaring. Ik werk graag samen met
-            collega's aan zowel nieuwe als bestaande technische projecten, gespecialiseerd in <b>back-end</b>
+            Ervaren allround software-engineer met meer dan 12 jaar professionele ervaring met <b>wiskunde</b> achtergrond. Ik werk graag aan 
+            technische projecten, gespecialiseerd in <b>back-end</b>
             webontwikkeling
             en
             <b>cloud</b> infrastructuur, tevens richt ik mij op <b>full-stack</b> ontwikkeling, <b>CLI</b> tools,
             <b>CICD</b>, <b>AI</b>, <b>automatisering</b> en
-            beveiliging.
+            <b>security</b>.
         </span>
-        <br /><br />
+        <!-- <br /><br />
         <span lang="en">
             My background in
             <a
@@ -267,8 +275,39 @@
             Ik waardeer een werkomgeving met ruimte voor persoonlijke ontwikkeling en frisse ideeën. Buiten
             werktijd studeer ik graag filosofie, politiek, economie, sociologie en geschiedenis. Ik speel ook piano, ga
             graag boulderen en speel graag bordspellen met vrienden.
-        </span>
+        </span> -->
+    </article>
 
+    <article id="recommendations" style="page-break-inside: avoid;">
+        <header>
+            <b>
+                <span lang="en">Recommendations</span>
+                <span lang="nl">Aanbevelingen</span>
+            </b>
+        </header>
+
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <i>Boris van Katwijk is not just an exceptional engineer; he's a team player, a leader, and a force multiplier. Any organization would be incredibly fortunate to have him on board. I give him my highest recommendation without hesitation.</i>
+                    </td>
+                    <td><a href="https://www.linkedin.com/in/bvankatwijk/details/recommendations/">Joris de Vreede</a></td>
+                </tr>
+                <tr>
+                    <td>
+                        <i>The energy and knowledge Boris brings to a team are invaluable. If you are looking for a skilled DevOps engineer who can guide teams in the right direction, I strongly recommend Boris.</i>
+                    </td>
+                    <td><a href="https://www.linkedin.com/in/bvankatwijk/details/recommendations/">Dennis van Boheemen</a></td>
+                </tr>
+                <tr>
+                    <td>
+                        <i>His analytical skills are second to none. He has a knack for assessing a technical challenge and defining several scenarios. It was a real pleasure to work with him as a product manager.</i>
+                    </td>
+                    <td><a href="https://www.linkedin.com/in/bvankatwijk/details/recommendations/">Edouard Dopper</a></td>
+                </tr>
+            </tbody>
+        </table>
     </article>
 
     <article id="experience">
@@ -700,38 +739,6 @@
                         </span>
                     </td>
                 </tr>
-        </table>
-    </article>
-
-    <article id="recommendations" style="page-break-inside: avoid;">
-        <header>
-            <b>
-                <span lang="en">Recommendations</span>
-                <span lang="nl">Aanbevelingen</span>
-            </b>
-        </header>
-
-        <table>
-            <tbody>
-                <tr>
-                    <td>
-                        <i>Boris van Katwijk is not just an exceptional engineer; he's a team player, a leader, and a force multiplier. Any organization would be incredibly fortunate to have him on board. I give him my highest recommendation without hesitation.</i>
-                    </td>
-                    <td><a href="https://www.linkedin.com/in/bvankatwijk/details/recommendations/">Joris de Vreede</a></td>
-                </tr>
-                <tr>
-                    <td>
-                        <i>The energy and knowledge Boris brings to a team are invaluable. If you are looking for a skilled DevOps engineer who can guide teams in the right direction, I strongly recommend Boris.</i>
-                    </td>
-                    <td><a href="https://www.linkedin.com/in/bvankatwijk/details/recommendations/">Dennis van Boheemen</a></td>
-                </tr>
-                <tr>
-                    <td>
-                        <i>His analytical skills are second to none. He has a knack for assessing a technical challenge and defining several scenarios. It was a real pleasure to work with him as a product manager.</i>
-                    </td>
-                    <td><a href="https://www.linkedin.com/in/bvankatwijk/details/recommendations/">Edouard Dopper</a></td>
-                </tr>
-            </tbody>
         </table>
     </article>
 
